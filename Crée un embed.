@@ -1,0 +1,23 @@
+Code pour faire un embed
+
+client.on("message", message => {
+
+   const prefix = "Votre préfixe"
+
+  if(message.content === prefix + "embed") {
+
+    const embed = new Discord.MessageEmbed()
+    .setColor("RANDOM")
+    .setAuthor(message.author.username, message.author.displayAvatarURL())
+    .setThumbnail(message.author.displayAvatarURL())
+    .setTitle("Voici un embed !")
+    .addField("Titre", "Description", true) //Le true permet d'aligner la colonne
+    .addField("Titre", "Description")
+    .setImage(message.author.displayAvatarURL())
+    .setFooter("Bonjour, je suis le footer de l'embed !")
+    .setTimestamp()
+
+    message.channel.send(embed)
+  }
+});
+ 
