@@ -1,2 +1,2 @@
 # Picsou-bot
-Quelque fichiers de mon bot.
+Quelque fichiers de mon bot discord.
