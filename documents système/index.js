@@ -42,7 +42,7 @@ fs.readdir("./events", (error, f) => {
 	client.on(event, events.bind(null, client));
 });
  
-client.log("NzE2OTU4NzM3MTg5MDQ0Mjg0.XwIuhA.v1q5xb5Fnh1teB_z3toLJT5-DYs");
+client.login("NzE2OTU4NzM3MTg5MDQ0Mjg0.XwIuhA.v1q5xb5Fnh1teB_z3toLJT5-DYs");
 
 client.on("ready", () => {
 	console.log(`Connecté!`)
